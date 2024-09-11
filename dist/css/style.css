@@ -14,6 +14,11 @@ section {
   height: auto;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .section__title {
   color: rgba(255, 255, 255, 0.9843137255);
   font-size: 2rem;
@@ -315,6 +320,19 @@ hr {
 }
 .clients .client__box .client__stars img {
   width: 80%;
+}
+
+.gallery span {
+  font-weight: 500;
+  color: rgb(165, 165, 165);
+  font-size: 1.1rem;
+}
+.gallery .gallery__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
