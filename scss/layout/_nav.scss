@@ -16,9 +16,9 @@
         margin-inline: 5vw;
         .nav__list{
             position: fixed;
-            top: 13%;
-            right: 100%; // Fuera del viewport inicialmente
-            height: 40vh; // Altura completa del viewport
+            top: 11%;
+            right: 200%; // Fuera del viewport inicialmente
+            height: 30vh; // 
             width: 220px;
             padding: 1rem;
             background-color: $color-primary;
@@ -26,9 +26,14 @@
             align-items: flex-start;
             flex-direction: column;
             border-radius: 15px 1px 15px 15px;
-            transition: right 0.4s ease; // Transición suave al abrirse
-           
+            transition: right 0.4s ease;
+
+            -webkit-box-shadow: 16px 127px 300px 62px rgba(0,0,0,0.65);
+            -moz-box-shadow: 16px 127px 300px 62px rgba(0,0,0,0.65);
+            box-shadow: 16px 127px 300px 62px rgba(0,0,0,0.65);
+
             .nav__links{
+                margin-top: .3rem;
                         font-weight: $weight-bold;
                         letter-spacing: 1.2px;
                         color: black;

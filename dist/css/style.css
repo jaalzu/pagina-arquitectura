@@ -26,9 +26,9 @@ body {
 }
 .header .navbar .nav__list {
   position: fixed;
-  top: 13%;
-  right: 100%;
-  height: 40vh;
+  top: 11%;
+  right: 200%;
+  height: 30vh;
   width: 220px;
   padding: 1rem;
   background-color: #F8D40B;
@@ -37,8 +37,12 @@ body {
   flex-direction: column;
   border-radius: 15px 1px 15px 15px;
   transition: right 0.4s ease;
+  -webkit-box-shadow: 16px 127px 300px 62px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 16px 127px 300px 62px rgba(0, 0, 0, 0.65);
+  box-shadow: 16px 127px 300px 62px rgba(0, 0, 0, 0.65);
 }
 .header .navbar .nav__list .nav__links {
+  margin-top: 0.3rem;
   font-weight: 700;
   letter-spacing: 1.2px;
   color: black;
@@ -116,7 +120,7 @@ p {
   border-radius: 7px;
   color: #09091C;
   font-weight: 600;
-  font-size: 1.03rem;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
