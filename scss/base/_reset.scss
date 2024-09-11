@@ -25,9 +25,18 @@ img{
     padding-top: 2rem;
     margin-bottom: 5rem;
     text-align: center;
-    font-weight: $weight-bold;
+    font-weight: $weight-extrabold;
 }
 
 .section__title.black{
     color: $color-black;
 }
+
+.section__subtitle{
+    
+        font-weight: $weight-medium;
+        color: rgb(165, 165, 165);
+        font-size: 1rem;
+   
+}
+

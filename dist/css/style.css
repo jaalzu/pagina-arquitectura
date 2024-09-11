@@ -25,11 +25,17 @@ img {
   padding-top: 2rem;
   margin-bottom: 5rem;
   text-align: center;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .section__title.black {
   color: black;
+}
+
+.section__subtitle {
+  font-weight: 500;
+  color: rgb(165, 165, 165);
+  font-size: 1rem;
 }
 
 .header .logo {
@@ -322,17 +328,49 @@ hr {
   width: 80%;
 }
 
-.gallery span {
-  font-weight: 500;
-  color: rgb(165, 165, 165);
-  font-size: 1.1rem;
-}
 .gallery .gallery__grid {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.3rem;
+}
+
+.contact .contact__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10vw;
+  margin-bottom: 7rem;
+  row-gap: 2.8rem;
+}
+.contact .contact__grid .contact__item {
+  display: flex;
+  column-gap: 1.2rem;
+  align-items: center;
+}
+.contact .contact__grid .contact__item i {
+  font-size: 2rem;
+  color: #F8D40B;
+}
+.contact .contact__grid .contact__item p {
+  color: white;
+  line-height: 1.3;
+  font-size: 1.3rem;
+}
+.contact .location {
+  border: 2px solid black;
+  margin-inline: 2vw;
+  margin-block: 2rem;
+}
+.contact .location h4 {
+  color: rgba(255, 255, 255, 0.9843137255);
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.contact .location iframe {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
