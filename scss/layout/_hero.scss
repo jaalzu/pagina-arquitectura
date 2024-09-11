@@ -1,0 +1,23 @@
+.header{
+    .hero__img{
+        .hero__desktop{
+            display: none;
+        }
+    }
+
+    .hero{
+        margin-inline: 4vw;
+        padding-top: 10vh;
+
+        .hero__description{
+            h1{
+                margin-top: 2.5rem;
+            }
+
+            p{
+                margin-block: 3rem;
+            }
+        }
+    }
+
+}

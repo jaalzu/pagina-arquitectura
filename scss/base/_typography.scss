@@ -1,0 +1,24 @@
+h1,h2,h3,h4,li,a{
+    font-family: $ff-raleway;
+}
+
+span,p{
+    font-family: $ff-latto;
+}
+
+h1{
+    font-size: 3.3rem;
+    font-weight: $weight-extrabold;
+    color: rgb(242, 242, 242);
+}
+
+
+
+p{
+    font-size: 1.140rem;
+    color: $color-p-1;
+    line-height: 1.6;
+    font-weight: $weight-medium;
+}
+
+    

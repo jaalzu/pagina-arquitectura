@@ -10,17 +10,9 @@ body {
   background-color: black;
 }
 
-.header {
-  background-color: transparent;
-  position: relative;
-  top: 0%;
-  width: 100%;
-  padding-top: 2rem;
-}
 .header .logo {
-  font-family: "Raleway", sans-serif;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 .header .logo span {
@@ -47,7 +39,6 @@ body {
   transition: right 0.4s ease;
 }
 .header .navbar .nav__list .nav__links {
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 1.2px;
   color: black;
@@ -72,6 +63,60 @@ body {
 }
 .header .nav__icons #close-menu {
   display: none;
+}
+
+.header {
+  background-color: transparent;
+  position: relative;
+  top: 0%;
+  width: 100%;
+  padding-top: 2rem;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, li, a {
+  font-family: "Raleway", sans-serif;
+}
+
+span, p {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font-size: 3.3rem;
+  font-weight: 800;
+  color: rgb(242, 242, 242);
+}
+
+p {
+  font-size: 1.14rem;
+  color: rgba(255, 255, 255, 0.8666666667);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.header .hero__img .hero__desktop {
+  display: none;
+}
+.header .hero {
+  margin-inline: 4vw;
+  padding-top: 10vh;
+}
+.header .hero .hero__description h1 {
+  margin-top: 2.5rem;
+}
+.header .hero .hero__description p {
+  margin-block: 3rem;
+}
+
+.btn-primary {
+  background-color: #F8D40B;
+  display: inline-block;
+  padding: 1rem 1.55rem;
+  border-radius: 7px;
+  color: #09091C;
+  font-weight: 600;
+  font-size: 1.03rem;
 }
 
 /*# sourceMappingURL=style.css.map */
