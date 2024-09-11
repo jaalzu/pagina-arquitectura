@@ -10,6 +10,14 @@ body {
   background-color: black;
 }
 
+.section__title {
+  color: rgba(255, 255, 255, 0.9843137255);
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
 .header .logo {
   color: white;
   font-size: 1.6rem;
@@ -93,8 +101,8 @@ h1 {
 }
 
 p {
-  font-size: 1.14rem;
-  color: rgba(255, 255, 255, 0.8666666667);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8039215686);
   line-height: 1.65;
   font-weight: 500;
 }
@@ -131,8 +139,8 @@ p {
 }
 
 .about {
-  background-color: rgba(255, 255, 255, 0.9294117647);
-  padding-bottom: 3rem;
+  background-color: rgba(255, 255, 255, 0.9843137255);
+  padding-bottom: 7rem;
 }
 .about .about__img {
   width: 100%;
@@ -164,6 +172,45 @@ hr {
   background-color: #F8D40B;
   border: none;
   height: 2px;
+}
+
+.services__hr {
+  margin-top: 2.2rem;
+  width: 30%;
+}
+
+.services {
+  margin-inline: 8vw;
+}
+.services .services__img {
+  width: 100%;
+  height: 100%;
+}
+.services .services__img img {
+  border-radius: 4px;
+  width: 100%;
+}
+.services .services__container .services__description {
+  padding-bottom: 5rem;
+}
+.services .services__container .services__description .services__title {
+  margin-block: 1.7rem;
+  line-height: 1.3;
+}
+.services .services__container .services__description .services__title span {
+  color: #F8D40B;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+.services .services__container .services__description .services__title h3 {
+  letter-spacing: 0.6px;
+  color: rgba(255, 255, 255, 0.9843137255);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.services .services__container .services__description p {
+  color: rgba(255, 255, 255, 0.8039215686);
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
