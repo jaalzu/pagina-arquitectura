@@ -7,15 +7,24 @@
 }
 
 body {
-  background-color: black;
+  background-color: #09091C;
+}
+
+section {
+  height: auto;
 }
 
 .section__title {
   color: rgba(255, 255, 255, 0.9843137255);
   font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+  padding-top: 2rem;
+  margin-bottom: 5rem;
   text-align: center;
+  font-weight: 700;
+}
+
+.section__title.black {
+  color: black;
 }
 
 .header .logo {
@@ -86,8 +95,12 @@ body {
   height: 90vh;
 }
 
-h1, h2, h3, h4, li, a {
+h1, h3, h4, li, a {
   font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
 }
 
 span, p {
@@ -181,6 +194,7 @@ hr {
 
 .services {
   margin-inline: 8vw;
+  padding-bottom: 6rem;
 }
 .services .services__img {
   width: 100%;
@@ -211,6 +225,42 @@ hr {
 .services .services__container .services__description p {
   color: rgba(255, 255, 255, 0.8039215686);
   font-weight: 400;
+}
+
+.work {
+  background-color: rgba(255, 255, 255, 0.9843137255);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  row-gap: 3rem;
+}
+.work .section__title {
+  padding-inline: 10vw;
+}
+.work .work__box {
+  border: 1px solid #888888;
+  margin-inline: 6vw;
+  border-radius: 2px;
+}
+.work .work__box .work__description {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+.work .work__box .work__description i {
+  font-size: 2.6rem;
+  color: #F8D40B;
+}
+.work .work__box .work__description h3 {
+  margin-top: 1.8rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.6px;
+  font-weight: 800;
+}
+.work .work__box .work__description p {
+  color: #888888;
+  margin-top: 1.3rem;
+  margin-bottom: 2.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

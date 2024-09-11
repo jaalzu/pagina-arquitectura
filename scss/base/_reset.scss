@@ -7,13 +7,22 @@
 }
 
 body{
-    background-color: black;
+    background-color: $color-black-bg;
+}
+
+section{
+    height: auto;
 }
 
 .section__title{
     color: $color-white-bg;
     font-size: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    padding-top: 2rem;
+    margin-bottom: 5rem;
     text-align: center;
+    font-weight: $weight-bold;
+}
+
+.section__title.black{
+    color: $color-black;
 }

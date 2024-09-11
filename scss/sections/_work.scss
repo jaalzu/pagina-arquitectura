@@ -1,0 +1,42 @@
+.work{
+    background-color: $color-white-bg;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    row-gap: 3rem;
+   
+    
+    .section__title{
+        padding-inline: 10vw;
+    }
+
+    .work__box{
+        border: 1px solid $color-gray-light;
+        margin-inline: 6vw;
+        border-radius: 2px;
+
+        .work__description{
+            margin-left: 2rem;
+            margin-top: 2rem;
+            margin-right: 1rem;
+
+            i{
+                font-size: 2.6rem;
+                color: $color-primary;
+            }
+
+            h3{
+                margin-top: 1.8rem;
+                font-size: 1.3rem;
+                letter-spacing: .6px;
+                font-weight: $weight-extrabold;
+            }
+
+            p{
+                color: $color-gray-light;
+                margin-top: 1.3rem;
+                margin-bottom: 2.3rem;
+            }
+        }
+    }
+}
