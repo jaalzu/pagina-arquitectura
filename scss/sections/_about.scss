@@ -1,0 +1,34 @@
+.about{
+    background-color: $color-white-bg;
+    padding-bottom: 3rem;
+
+
+    .about__img {
+        width: 100%;
+        height: 100%;
+        img{
+            border-radius: 4px;
+            width: 100%;
+        }
+    }
+    
+    
+    .about__description{
+        margin-inline: 4vw;
+        margin-top: 3.3rem;
+
+        h2{
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: $weight-medium;
+            letter-spacing: .4px;
+        }
+
+        p{
+            margin-top: 3.5rem;
+            color: $color-p-2;
+            margin-bottom: 1.7rem;
+        }
+    }
+}
+
