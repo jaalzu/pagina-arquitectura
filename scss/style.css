@@ -90,8 +90,6 @@ p {
   flex-direction: column;
   border-radius: 15px 1px 15px 15px;
   transition: right 0.4s ease;
-  -webkit-box-shadow: 16px 127px 300px 62px rgba(0, 0, 0, 0.65);
-  -moz-box-shadow: 16px 127px 300px 62px rgba(0, 0, 0, 0.65);
   box-shadow: 16px 127px 300px 62px rgba(0, 0, 0, 0.65);
 }
 .header .navbar .nav__list .nav__links {
@@ -339,8 +337,6 @@ hr {
 .clients .client__box {
   margin-inline: 7vw;
   border-radius: 5px;
-  -webkit-box-shadow: 4px 10px 21px -10px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 10px 21px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 10px 21px -10px rgba(0, 0, 0, 0.75);
   background-color: rgb(254, 255, 240);
   padding: 1rem 1.4rem;
@@ -399,7 +395,8 @@ hr {
 }
 .contact .contact__grid .contact__item {
   display: flex;
-  column-gap: 1.2rem;
+  -moz-column-gap: 1.2rem;
+       column-gap: 1.2rem;
   align-items: center;
 }
 .contact .contact__grid .contact__item i {
@@ -425,6 +422,4 @@ hr {
 }
 .contact .location iframe {
   width: 100%;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,12 +1,17 @@
 @import '../scss/utils/variables';
+
 @import '../scss/base/reset';
+@import '../scss/base/typography';
+
 @import '../scss/layout/nav';
 @import '../scss/layout/header';
-@import '../scss/base/typography';
 @import '../scss/layout/hero';
+@import '../scss/layout/footer';
+
 @import '../scss/components/buttons';
-@import '../scss/sections/about';
 @import '../scss/components/lines.scss';
+
+@import '../scss/sections/about';
 @import '../scss/sections/services';
 @import '../scss/sections/work';
 @import '../scss/sections/clients';
