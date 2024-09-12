@@ -2,6 +2,7 @@
     background-color: $color-white-bg;
     padding-inline: 5vw;
     height: auto;
+    padding-bottom: 4rem;
 
     .footer__title{
         padding-top: 3rem;
@@ -54,7 +55,6 @@
     .copyright{
         text-align: center;
         font-weight: $weight-light;
-        padding-block: 1rem;
-        border-bottom: 1px solid $color-primary;
+        padding-top: 1rem;
     }
 }

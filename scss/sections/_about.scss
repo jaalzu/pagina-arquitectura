@@ -1,8 +1,6 @@
 .about{
-    background-color: $color-white-bg;
-    padding-bottom: 7rem;
-
-
+    background-color: $color-white-bg;  
+    padding-bottom: 8rem;
     .about__img {
         width: 100%;
         height: 100%;
@@ -15,8 +13,7 @@
     
     .about__description{
         margin-inline: 4vw;
-        margin-top: 3.3rem;
-
+        margin-top: 4rem;
         h2{
             font-size: 1.8rem;
             margin-bottom: 1rem;
