@@ -128,7 +128,7 @@ p {
   top: 0%;
   width: 100%;
   padding-top: 2rem;
-  height: 90vh;
+  height: 100vh;
 }
 
 .header .hero__img .hero__desktop {
@@ -144,9 +144,6 @@ p {
 }
 .header .hero .hero__description p {
   margin-block: 3rem;
-}
-.header .hero .hero__description a {
-  margin-bottom: 3rem;
 }
 
 .footer {
