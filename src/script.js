@@ -38,3 +38,15 @@ document.addEventListener('DOMContentLoaded', function () {
       el: '.swiper-scrollbar',
     },
   });
+
+
+
+//   window.addEventListener('DOMContentLoaded', function() {
+//     const navIcons = document.querySelector('.nav__icons');
+//     const logo = document.querySelector('.logo');
+
+//     if (logo && navIcons) {
+//         const logoHeight = logo.offsetHeight;
+//         navIcons.style.top = `${logoHeight + 10}px`; // Ajusta el margen según necesites
+//     }
+// });
