@@ -407,8 +407,8 @@ hr {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 10vw;
-  margin-bottom: 6rem;
-  row-gap: 2.8rem;
+  margin-bottom: 7rem;
+  row-gap: 3rem;
 }
 .contact .contact__grid .contact__item {
   display: flex;
@@ -428,13 +428,13 @@ hr {
 .contact .location {
   border: 2px solid black;
   margin-inline: 2vw;
-  margin-block: 2rem;
+  margin-block: 4rem;
 }
 .contact .location h4 {
   color: rgba(255, 255, 255, 0.9843137255);
   text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 .contact .location iframe {
   width: 100%;
