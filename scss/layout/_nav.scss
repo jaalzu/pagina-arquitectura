@@ -30,9 +30,7 @@
             border-radius: 15px 1px 15px 15px;
             transition: right 0.4s ease;
 
-            // -webkit-box-shadow: 16px 127px 300px 62px rgba(0,0,0,0.65);
-            // -moz-box-shadow: 16px 127px 300px 62px rgba(0,0,0,0.65);
-            // box-shadow: 16px 127px 300px 62px rgba(0,0,0,0.65);
+           
 
             .nav__links{
                 margin-top: .3rem;
@@ -72,3 +70,40 @@
     }
 }
 
+
+@media screen and (min-width:1024px){
+    .header{
+        .logo{
+            font-size: 2.1rem;
+        }
+
+
+        .navbar{
+            .nav__list{
+                position: static;
+                padding: 0;
+                height: 0;
+                width: 100%;
+                align-items: center;
+                transition: none;
+                background-color: transparent;
+
+
+                ul{
+                    display: flex;
+                    gap: 1.5rem;
+                    
+                    .nav__links{
+                        margin-top: -0.5rem;
+                        margin-bottom: 0;
+                        color: $color-white-bg;
+                    }
+                }
+            }
+        }
+
+        .nav__icons{
+            display: none;
+        }
+    }
+}

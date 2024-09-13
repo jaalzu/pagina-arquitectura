@@ -3,41 +3,102 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 6rem;
-    row-gap: 3rem;
    
     
     .section__title{
         padding-inline: 10vw;
     }
-
+.work__grid{
+    display: grid;
+    gap: 2rem;
     .work__box{
-        border: 1px solid $color-gray-light;
         margin-inline: 6vw;
-        border-radius: 2px;
-
+        border: 1px solid $color-gray-light;
+        border-radius: 5px;
+        
         .work__description{
             margin-left: 2rem;
             margin-top: 2rem;
             margin-right: 1rem;
-
+            
             i{
                 font-size: 2.6rem;
                 color: $color-primary;
             }
-
+            
             h3{
                 margin-top: 1.8rem;
                 font-size: 1.3rem;
                 letter-spacing: .6px;
                 font-weight: $weight-extrabold;
             }
-
+            
             p{
                 color: $color-gray-light;
                 margin-top: 1.3rem;
                 margin-bottom: 2.3rem;
                 font-size: .9rem;
                 margin-right: 1.3rem;
+            }
+        }
+    }
+    }
+}
+
+
+
+@media screen and (min-width:1025px){
+    .work{
+        padding-top: 3rem;
+        padding-bottom: 13rem;
+        .section__title{
+            padding-inline: 38vw;
+        }
+
+        .work__grid{
+            gap: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .work__box{
+             margin-inline: 2vw;
+
+             .work__description{
+                margin-left: 1rem;
+
+                h3{
+                    margin-top: 1rem;
+                }
+                p{
+                    font-size: .8rem;
+                    line-height: 1.5;
+                }
+             }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1275px){
+    .work{
+        padding-inline: 3vw;
+
+        .work__grid{
+            padding-top: 3rem;
+            gap: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            .work__box{
+             margin-inline: 0;
+
+             .work__description{
+                margin-left: 1rem;
+                h3{
+                    margin-top: 1.4rem;
+                }
+                p{
+                    font-size: .7rem;
+                }
+             }
             }
         }
     }

@@ -23,7 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    loop: false,
+
+    spaceBetween:20,
+
+    centeredSlides:true,
   
     // If we need pagination
     pagination: {
@@ -37,6 +41,8 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
+
+    initialSlide:1,
   });
 
 
