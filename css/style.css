@@ -197,7 +197,7 @@ a {
 @media screen and (min-width: 1025px) {
   .header {
     overflow: hidden;
-    background-image: url(../public/imagenes/hero-mobile.jpg);
+    background: url(../public/imagenes/hero-mobile.jpg);
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -725,7 +725,7 @@ hr {
   }
 }
 .contact {
-  background-image: url(/public/imagenes/contact-us-img.jpg);
+  background: url(./public/imagenes/contact-us-img.jpg);
   background-position: 100%;
   background-repeat: no-repeat;
   background-size: cover;
