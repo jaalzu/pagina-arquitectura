@@ -197,7 +197,7 @@ a {
 @media screen and (min-width: 1025px) {
   .header {
     overflow: hidden;
-    background-image: url(../public/imagenes/hero-mobile.jpg);
+    background-image: url(public/imagenes/hero-mobile.jpg);
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -384,19 +384,19 @@ hr {
 .about {
   background-color: rgba(255, 255, 255, 0.9843137255);
   padding-bottom: 8rem;
-  padding-top: 4rem;
 }
 .about .about__img {
   width: 100%;
-  height: 100%;
 }
 .about .about__img img {
   width: 100%;
+  border-radius: 3px;
 }
 .about .about__img__desktop {
   display: none;
 }
 .about .about__description {
+  padding-top: 3rem;
   margin-inline: 4vw;
 }
 .about .about__description h2 {
@@ -725,7 +725,7 @@ hr {
   }
 }
 .contact {
-  background-image: url("/public/imagenes/contact-us-img.jpg");
+  background-image: url(/public/imagenes/contact-us-img.jpg);
   background-position: 100%;
   background-repeat: no-repeat;
   background-size: cover;
