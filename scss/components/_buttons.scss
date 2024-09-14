@@ -4,8 +4,13 @@
     padding: 1rem 1.550rem;
     border-radius: 7px;
     color: $color-black-bg;
+    cursor: pointer;
     font-weight: $weight-semibold;
     font-size: 1rem;
+    transition: .2 ease;
+    &:hover{
+        opacity: 0.8;
+    }
 }
 
 .btn__link{

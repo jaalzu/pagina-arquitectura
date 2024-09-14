@@ -18,7 +18,8 @@
         margin-inline: 5vw;
         .nav__list{
             position: fixed;
-            top: 12%;
+            z-index: 10000;
+            top: 13%;
             right: 200%; // Fuera del viewport inicialmente
             height: 33vh; // 
             width: 220px;
@@ -45,7 +46,7 @@
         }
 
         .show-menu{
-            right: 12%;
+            right: 14%;
         }
     }
     
@@ -97,6 +98,20 @@
                         margin-top: -0.5rem;
                         margin-bottom: 0;
                         color: $color-white-bg;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: -2px;
+                            left: 0;
+                            width: 0%;
+                            height: 2px;
+                            background-color: $color-primary;
+                            transition: .3s ease;
+                        }
+                        &:hover::after{
+                            width: 100%;
+                        }
                     }
                 }
             }

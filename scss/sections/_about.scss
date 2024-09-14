@@ -1,6 +1,7 @@
 .about{
     background-color: $color-white-bg;  
     padding-bottom: 8rem;
+    padding-top: 4rem;
     .about__img {
         width: 100%;
         height: 100%;
@@ -17,7 +18,7 @@
     
     .about__description{
         margin-inline: 4vw;
-        margin-top: 4rem;
+        
         h2{
             font-size: 1.8rem;
             margin-bottom: 1rem;
@@ -26,7 +27,7 @@
         }
 
         p{
-            margin-top: 3.5rem;
+            margin-top: 3rem;
             color: $color-p-2;
             margin-bottom: 1.7rem;
         }

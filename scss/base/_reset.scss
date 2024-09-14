@@ -16,11 +16,12 @@ section{
 }
 
 
-
 img{
-    width: 100%;
     height: auto;
+    object-fit: cover;
 }
+
+
 
 .section__title{
     color: $color-white-bg;
@@ -29,15 +30,10 @@ img{
     margin-bottom: 5rem;
     text-align: center;
     font-weight: $weight-extrabold;
+    position: relative;
+    z-index: 2;
 }
 
 .section__title.black{
     color: $color-black;
 }
-
-.section__subtitle{
-        font-weight: $weight-medium;
-        color: rgb(165, 165, 165);
-        font-size: 1rem;
-}
-

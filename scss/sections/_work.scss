@@ -2,12 +2,15 @@
     background-color: $color-white-bg;
     display: flex;
     flex-direction: column;
-    padding-bottom: 6rem;
-   
+    padding-bottom: 10rem;
+    padding-top: 3rem;
+    align-items: center;
     
     .section__title{
         padding-inline: 10vw;
     }
+
+    
 .work__grid{
     display: grid;
     gap: 2rem;
