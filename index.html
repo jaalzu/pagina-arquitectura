@@ -5,16 +5,18 @@
     <!-- DESCRIPTION  -->
     <meta name="description" content="JAVALZU ARQUITECTURA: Expertos en diseño arquitectónico innovador y sostenible, especializado en construcción de viviendas personalizadas y soluciones energéticas.">
     <!-- FAVICON  -->
-    <link rel="icon" href="/public/imagenes/milogo-removebg-preview-_1_.svg" type="image/x-icon">
+    <link rel="icon" href="public/imagenes/logoMioMobile.svg" type="image/x-icon">
     <!-- META NAME FOR RESPONSIVE  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ROBOTS META TAG  -->
     <meta name="robots" content="index, follow">
     <!-- OPEN GRAPH  -->
     <meta property="og:title" content="JAVALZU ARQUITECTURA">
-    <meta property="og:description" content="JAVALZU Architecture | Innovación y Diseño Sustentable">
+    <meta property="og:description" content="En JAVALZU ARQUITECTURA, transformamos tus sueños en realidad con diseños innovadores y soluciones sostenibles. Expertos en viviendas personalizadas y eficiencia energética.">
     <meta property="og:image" content="https://example.com/your-image.jpg">
     <meta property="og:url" content="https://jaalzu.github.io/pagina-arquitectura/">
+    <meta name="keywords" content="arquitectura, diseño, construcción, viviendas personalizadas, soluciones energéticas">
+
     <!-- GOOGLE FONTS LINK  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,13 +50,13 @@
   <header class="header" role="banner" id="header">
       <!-- NAVBAR -->
     <nav class="navbar" role="navigation">
-        <img src="public/imagenes/logoMioDesktop.svg" alt="Logo Desktop" class="logo desktop-logo">
-<img src="public/imagenes/logoMioMobile.svg" alt="Logo Mobile" class="logo mobile-logo">
+        <img src="public/imagenes/logoMioDesktop.svg" alt="Javalzu logo" class="logo desktop-logo">
+<img src="public/imagenes/logoMioMobile.svg" alt="Javalzu Logo" class="logo mobile-logo">
 
       <div class="nav__list " id="nav-list">
         <ul>
           <li>
-            <a href="/header" class="nav__links">
+            <a href="/header" class="nav__links" aria-current="page">
                 INICIO
             </a>
           </li>
@@ -92,7 +94,7 @@
       </div>
     </nav>
 
-
+      <!-- HERO SECTION START -->
 
     <section class="hero">
         <div class="hero__description">
@@ -101,14 +103,14 @@
             <a href="#contact" class="btn-primary animate__animated animate__fadeInLeft">Contactanos!</a>
         </div>
         <div class="hero__img">
-            <img src="public/imagenes/hero-desktop.jpg" alt="" class="hero__desktop">
+            <img src="public/imagenes/hero-desktop.jpg" alt="imagen destacada del hero" class="hero__desktop">
         </div>
         </section>
     </header>
 
     <section class="about" id="about">
         <div class="about__img__desktop">
-            <img src="public/imagenes/about__img.jpg" alt="">
+            <img src="public/imagenes/about__img.jpg" alt="img del about">
         </div>
         <div class="about__description">
             <h2 class="about__title"> Diseño, Construcción e Inspiración</h2>
@@ -119,12 +121,16 @@
            </div>
     </section>
 
+      <!-- HERO SECTION END -->
+
+
+      <!-- SERVICES SECTION START -->
 
     <section class="services" id="services">
         <h2 class="section__title ">NUESTROS SERVICIOS</h2>
         <div class="services__container">
             <div class="services__img">
-                <img src="public/imagenes/casa.jpg" alt="services__img1">
+                <img src="public/imagenes/casa.jpg" alt="services__img1 casa exterior">
             </div>
             <div class="services__description">
                 <div class="services__title">
@@ -139,7 +145,7 @@
         </div>
         <div class="services__container">
             <div class="services__img">
-                <img src="public/imagenes/patio-desktop.jpg" alt="services_img2">
+                <img src="public/imagenes/patio-desktop.jpg" alt="services_img2 patio interior">
             </div>
             <div class="services__description">
                 <div class="services__title">
@@ -154,7 +160,7 @@
         </div>
         <div class="services__container">
             <div class="services__img">
-                <img src="public/imagenes/panel-solar-mobile.jpg" alt="services_img3">
+                <img src="public/imagenes/panel-solar-mobile.jpg" alt="services_img3 paneles solares">
             </div>
             <div class="services__description">
                 <div class="services__title">
@@ -169,7 +175,7 @@
         </div>
         <div class="services__container">
             <div class="services__img">
-                <img src="public/imagenes/vecindario-desktop.jpg" alt="services_img4">
+                <img src="public/imagenes/vecindario-desktop.jpg" alt="services_img4 vecindario">
             </div>
             <div class="services__description">
                 <div class="services__title">
@@ -184,6 +190,10 @@
         </div>
         </section>
 
+      <!-- SERVICES SECTION END -->
+
+
+      <!-- WORK SECTION START -->
 
         <section class="work" id="work">
                 <h2 class="section__title black">¿POR QUÉ DEBERÍAS TRABAJAR CON NOSOTROS?</h2>
@@ -223,14 +233,19 @@
             </div>
         </section>
 
+      <!-- WORK SECTION END -->
+
+
+      <!-- CLIENTS SECTION START -->
+
         <section class="clients" id="clients">
             <h2 class="section__title black">QUÉ DICEN LOS CLIENTES</h2>
         <!-- Slider main container -->
-<div class="swiper">
+            <div class="swiper">
     <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
+          <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide">
+          <div class="swiper-slide" aria-label="Testimonio de Pepe Diaz">
         <div class="client__box">
             <div class="client__name">
                 <p>Pepe Diaz</p>
@@ -249,13 +264,13 @@
                     <i class='bx bxs-star'></i>
                 </div>
                 <div>
-                    <img src="public/imagenes/icons8-logo-de-google-48.svg" alt="">
+                    <img src="public/imagenes/icons8-logo-de-google-48.svg" alt="logo de google">
                 </div>
             </div>
         </div>
       </div>
 
-       <div class="swiper-slide">
+       <div class="swiper-slide" aria-label="Testimonio de Elena Wat">
          <div class="client__box">
             <div class="client__name">
                 <p>Elena Wat</p>
@@ -274,14 +289,14 @@
                     <i class='bx bxs-star'></i>
                 </div>
                 <div>
-                    <img src="public/imagenes/icons8-logo-de-google-48.svg" alt="">
+                    <img src="public/imagenes/icons8-logo-de-google-48.svg" alt="logo de google">
                 </div>
         </div>
     </div>
 </div>
       
-      <div class="swiper-slide">
-        <div class="client__box">
+      <div class="swiper-slide" aria-label="Testimonio de Sara Sanchez">
+        <div class="client__box" >
             <div class="client__name">
                 <p>Sara Sanchez</p>
                 <span>3rd,october 2021</span>
@@ -299,19 +314,19 @@
                     <i class='bx bxs-star'></i>
                 </div>
                 <div>
-                    <img src="public/imagenes/icons8-logo-de-google-48.svg" alt="">
+                    <img src="public/imagenes/icons8-logo-de-google-48.svg" alt="logo de google">
                 </div>
             </div>
         </div>
       </div>  
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- If we need scrollbar -->
   </div>
         </section>
 
+      <!-- CLIENTS SECTION END -->
 
+
+          <!-- CONTACT SECTION START -->
 
 
 <section class="contact" id="contact">
@@ -343,7 +358,9 @@
 
 </section>
 
+          <!-- CONTACT SECTION END -->
 
+          <!-- FOOTER  START -->
 
 <footer class="footer" id="footer">
     <div class="footer__title">
@@ -391,16 +408,24 @@
     </div>
     <div class="footer__social">
         <ul>
-            <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-            <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
-            <li><a href="#"><i class='bx bxl-whatsapp'></i></a></li>
+            <li><a href="#" aria-label="Facebook de Javalzu"><i class='bx bxl-facebook'></i></a></li>
+            <li><a href="#" aria-label="Instagram de Javalzu"><i class='bx bxl-instagram'></i></a></li>
+            <li><a href="#" aria-label="Whatsapp de Javalzu"><i class='bx bxl-whatsapp'></i></a></li>
         </ul>
     </div>
     <div class="copyright"><span>© Site by JAVALZU</span></div>
 </footer>
 
+
+          <!-- FOOTER  END -->
+
+
+
+
+
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 <script src="src/script.js"></script>    
+
 </body>
 </html>
