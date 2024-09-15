@@ -37,14 +37,18 @@
                 }
             }
             .client__comment{
-                h4{
+                span{
                     font-size: 1.3rem;
                     margin-bottom: .3rem;
+                    font-weight: $weight-semibold;
                 }
                 p{
                     color: $color-black-bg;
                     line-height: 1.4;
                     margin-bottom: 1.8rem;
+                    margin-top: 1rem;
+                    font-weight: $weight-regular;
+
                 }
             }
             .client__stars{
@@ -99,7 +103,7 @@
             height: 90%;
 
            .client__comment{
-            h4{
+            span{
                 font-size: 1.4rem;
                 margin-bottom: .8rem;
             }

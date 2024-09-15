@@ -702,14 +702,17 @@ hr {
   color: #888888;
   font-size: 0.9rem;
 }
-.clients .client__box .client__comment h4 {
+.clients .client__box .client__comment span {
   font-size: 1.3rem;
   margin-bottom: 0.3rem;
+  font-weight: 600;
 }
 .clients .client__box .client__comment p {
   color: #09091C;
   line-height: 1.4;
   margin-bottom: 1.8rem;
+  margin-top: 1rem;
+  font-weight: 400;
 }
 .clients .client__box .client__stars {
   display: flex;
@@ -753,7 +756,7 @@ hr {
     padding: 1rem 2rem;
     height: 90%;
   }
-  .clients .client__box .client__comment h4 {
+  .clients .client__box .client__comment span {
     font-size: 1.4rem;
     margin-bottom: 0.8rem;
   }
