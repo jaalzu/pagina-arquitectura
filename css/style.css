@@ -22,6 +22,11 @@ img {
   width: auto;
 }
 
+.logo {
+  width: auto;
+  height: auto;
+}
+
 /* Estilo general para el logo */
 .logo {
   display: none; /* Oculta ambos logos por defecto */
@@ -813,7 +818,8 @@ hr {
   font-size: 2rem;
   color: black;
 }
-.contact .contact__grid .contact__item h4 {
+.contact .contact__grid .contact__item span {
+  font-family: "Raleway", sans-serif;
   color: rgba(255, 255, 255, 0.9843137255);
   font-weight: 700;
   font-size: 1.5rem;
