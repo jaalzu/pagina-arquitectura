@@ -8,6 +8,8 @@
     font-weight: $weight-semibold;
     font-size: 1rem;
     transition: .2 ease;
+    animation-delay: 1.4s;
+
     &:hover{
         opacity: 0.8;
     }

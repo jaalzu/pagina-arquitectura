@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.78.0"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
   }
 }
