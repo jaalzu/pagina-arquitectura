@@ -44,46 +44,55 @@ document.addEventListener('DOMContentLoaded', function () {
 
     initialSlide:1,
   });
+// Función para aplicar ScrollReveal solo en pantallas grandes (más de 1025px)
+function applyScrollRevealForDesktop() {
+  if (window.matchMedia('(min-width: 1025px)').matches) {
+    function revealElements(selector) {
+      ScrollReveal().reveal(selector, {
+        duration: 500,
+        delay: 300,
+        distance: '50px',
+        origin: 'bottom',
+        opacity: 0,
+        scale: 0.85,
+        easing: 'ease-in-out',
+        reset: false,
+        viewFactor: 0.3,
+        interval: 200
+      });
+    }
 
-  function revealElements(selector) {
-    ScrollReveal().reveal(selector, {
-      duration: 500,
-      delay: 300,
-      distance: '50px',
-      origin: 'bottom',
-      opacity: 0,
-      scale: 0.85,
-      easing: 'ease-in-out',
-      reset: false,
-      viewFactor: 0.3,
-      interval: 200
+    revealElements('.about__description');
+    revealElements('.services__container');
+    revealElements('.work__box');
+    revealElements('.swiper-wrapper');
+    revealElements('.contact__grid');
+
+    ScrollReveal().reveal('.section__title', {
+      delay: 1300,                 // Espera 0.3 segundos antes de revelar
+      distance: '50px',           // El contenido aparece desde 50px abajo
+      origin: 'top',           // Aparece desde arriba
+      duration: 1600,              // La duración de la animación ScrollReveal
+      opacity: 0,                 // Cambia la opacidad para que el elemento "se desvanezca" al aparecer
+      scale: 0.85,                // Escala inicial para el elemento
+      easing: 'ease-in-out',      // Transición suave
+      reset: false,               // No repite la animación al hacer scroll
+      beforeReveal: function (el) {
+        // Agrega la clase de Animate.css cuando se revele el elemento
+        el.classList.add('animate__animated', 'animate__backInUp');
+      }
     });
   }
+}
 
+// Aplica las animaciones ScrollReveal para pantallas grandes (más de 1025px)
+applyScrollRevealForDesktop();
 
-  revealElements('.about__description');
-  revealElements('.services__container');
-  revealElements('.work__box');
-  revealElements('.swiper-wrapper');
-  revealElements('.contact__grid');
+// Opcional: Actualiza ScrollReveal cuando cambie el tamaño de la ventana
+window.addEventListener('resize', function() {
+  applyScrollRevealForDesktop();
+});
 
-
-  
-
-  ScrollReveal().reveal('.section__title', {
-    delay: 1300,                 // Espera 0.3 segundos antes de revelar
-    distance: '50px',           // El contenido aparece desde 50px abajo
-    origin: 'top',           // Aparece desde abajo
-    duration: 1600,              // La duración de la animación ScrollReveal
-    opacity: 0,                 // Cambia la opacidad para que el elemento "se desvanezca" al aparecer
-    scale: 0.85,                // Escala inicial para el elemento
-    easing: 'ease-in-out',      // Transición suave
-    reset: false,               // No repite la animación al hacer scroll
-    beforeReveal: function (el) {
-      // Agrega la clase de Animate.css cuando se revele el elemento
-      el.classList.add('animate__animated', 'animate__backInUp');
-    }
-  });
 
 
 
