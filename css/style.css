@@ -247,7 +247,7 @@ a {
     background-position-x: 110%;
   }
   .header::before {
-    background-color: rgba(0, 0, 0, 0.2); /* Color semitransparente */
+    background-color: rgba(0, 0, 0, 0.3); /* Color semitransparente */
   }
   .header .hero {
     padding-top: 4vh;
@@ -685,6 +685,7 @@ hr {
   gap: 1rem;
 }
 .clients .client__box {
+  cursor: pointer;
   margin-inline: 7vw;
   border-radius: 5px;
   -webkit-box-shadow: 4px 10px 21px -10px rgba(0, 0, 0, 0.75);
@@ -786,7 +787,7 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.56); /* Color semitransparente */
+  background-color: rgba(0, 0, 0, 0.63); /* Color semitransparente */
   z-index: 1; /* Coloca la capa por encima de la imagen pero debajo del contenido */
 }
 .contact .section__subtitle {
@@ -806,16 +807,20 @@ hr {
   z-index: 2; /* Para que el contenido esté por encima de la capa de opacidad */
 }
 .contact .contact__grid .contact__item {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  position: relative;
+  align-items: center;
+  justify-content: center;
 }
-.contact .contact__grid .contact__item i {
-  margin-bottom: 0.3rem;
+.contact .contact__grid .contact__item .svg__border {
+  display: flex;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
   background-color: #F8D40B;
   border-radius: 50%;
-  padding: 0.8rem;
-  font-size: 2rem;
-  color: black;
+  margin-bottom: 0.4rem;
 }
 .contact .contact__grid .contact__item span {
   font-family: "Raleway", sans-serif;

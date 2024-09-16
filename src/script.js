@@ -20,6 +20,14 @@ document.addEventListener('DOMContentLoaded', function () {
   
 
 
+
+
+
+
+
+  
+
+
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -44,6 +52,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     initialSlide:1,
   });
+
+
+
+
+
+
+
+
 // Función para aplicar ScrollReveal solo en pantallas grandes (más de 1025px)
 function applyScrollRevealForDesktop() {
   if (window.matchMedia('(min-width: 1025px)').matches) {
@@ -98,32 +114,6 @@ window.addEventListener('resize', function() {
 
 
 
-
-
-
-// Suponiendo que tienes una función que determina la sección activa
-function setActiveNavLink() {
-  // Obtén todos los enlaces de navegación
-  const navLinks = document.querySelectorAll('.nav__links a'); // Asegúrate de seleccionar los enlaces dentro de .nav__links
-
-  // Recorre cada enlace y quita el atributo aria-current
-  navLinks.forEach(link => link.removeAttribute('aria-current'));
-
-  // Determina cuál enlace debe ser el activo
-  const currentSection = document.querySelector('.current'); // Asegúrate de que la clase 'current' esté en la sección activa
-  if (currentSection) {
-    const activeLink = document.querySelector(`a[href="#${currentSection.id}"]`);
-    if (activeLink) {
-      activeLink.setAttribute('aria-current', 'page');
-    }
-  }
-}
-
-// Llama a esta función en el momento adecuado, por ejemplo, cuando se carga la página o se navega a una nueva sección
-document.addEventListener('DOMContentLoaded', setActiveNavLink);
-
-// También puedes llamar a la función en eventos de desplazamiento si tu navegación es dinámica
-window.addEventListener('scroll', setActiveNavLink);
 
 
 

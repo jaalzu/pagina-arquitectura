@@ -12,9 +12,10 @@
         align-items: center;
         height: 400px;
         gap: 1rem;
-      }
-
-      .client__box{
+    }
+    
+    .client__box{
+          cursor: pointer;
         margin-inline: 7vw;
         border-radius: 5px;
         -webkit-box-shadow: 4px 10px 21px -10px rgba(0,0,0,0.75);
