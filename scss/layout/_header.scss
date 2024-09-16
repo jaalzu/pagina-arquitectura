@@ -4,7 +4,7 @@
     top: 0%;
     width: 100%;
     height: 100vh;
-    background-image: url(../public/imagenes/hero-desktop.jpg);
+    background-image: url(../public/imagenes/hero-desktop.webp);
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -54,7 +54,6 @@
 @media screen and (min-width:1025px){
     .header{
         overflow: hidden;
-        background-image: url(../public/imagenes/hero-desktop.jpg);
         background-position: right;
         background-size: contain;
         background-repeat: no-repeat;

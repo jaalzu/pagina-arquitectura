@@ -124,3 +124,26 @@ document.addEventListener('DOMContentLoaded', setActiveNavLink);
 
 // También puedes llamar a la función en eventos de desplazamiento si tu navegación es dinámica
 window.addEventListener('scroll', setActiveNavLink);
+
+
+
+
+
+
+
+
+function loadCSS(href, callback) {
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = href;
+  link.onload = callback;
+  document.head.appendChild(link);
+}
+
+// Cargar Boxicons después de un retraso o bajo demanda
+setTimeout(function() {
+  loadCSS('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css', function() {
+    console.log('Boxicons CSS cargado');
+    // Aquí puedes realizar cualquier acción adicional si es necesario
+  });
+}, 3000); // Retraso de 3 segundos, ajusta según tus necesidades
