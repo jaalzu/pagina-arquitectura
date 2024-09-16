@@ -47,13 +47,13 @@
 @media screen and (min-width:1025px){
     .services{
         padding-top: 5rem;
-        margin-inline: 3vw;
+        margin-inline: 2vw;
         .services__img{
-        margin-inline: 3vw;
+        margin-inline: 2vw;
 
             img{
-                width: 580px;
-                height: 540px;
+                width: 500px;
+                height: 500px;
             }
         }
 
@@ -64,7 +64,7 @@
            
 
             .services__description{
-                margin-right: 2rem;
+                margin-right: 0rem;
 
                 .services__title{
                     margin-block:2rem;
@@ -75,12 +75,12 @@
 
                     h3{
                         margin-top: .4rem;
-                        font-size: 1.8rem;
+                        font-size: 1.9rem;
                     }
                 }
 
                 p{
-                    max-width: 80%;
+                    max-width: 95%;
                 }
                 
                 
@@ -100,17 +100,48 @@
 @media screen and (min-width:1275px){
 .services{
     margin-inline: 14vw;
+.services__img{
+
+    img{
+        width: 540px;
+        height: 540px;
+    }
+}
+.services__container{
 
     .services__description{
-
-        .services__title{
-
-        }
-
+        
+        
         p{
+            max-width: 95%;
             font-size: 1.1rem;
         }
     }
+    }
+}
+}
+
+
+
+@media screen and (min-width:1475px){
+.services{
+    margin-inline: 14vw;
+.services__img{
+
+    img{
+        width: 600px;
+        height: 540px;
+    }
+}
+.services__container{
+
+    .services__description{
+        
+        p{
+            max-width: 85%;
+        }
+    }
+}
 }
 
 }

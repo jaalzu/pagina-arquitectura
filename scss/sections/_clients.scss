@@ -1,6 +1,6 @@
 .clients{
     background-color: $color-white-bg;
-    height: 100vh;
+    min-height: 90vh;
     padding-top: 4rem;
     
         h2{
@@ -10,8 +10,9 @@
     .swiper {
         display: flex;
         align-items: center;
-        height: 400px;
+        height: 430px;
         gap: 1rem;
+        width: 100%;
     }
     
     .client__box{

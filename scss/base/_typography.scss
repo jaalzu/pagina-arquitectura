@@ -11,14 +11,19 @@ span,p{
 }
 
 h1{
-    font-size: 3.3rem;
+    font-size: clamp(3rem,4.2vw,4.5rem);
     font-weight: $weight-extrabold;
     color: rgb(242, 242, 242);
 }
 
+@media screen and (max-width:360px){
+    h1{
+        font-size: 2.9rem;
+    }
+}
 
 p{
-    font-size: 1rem;
+    font-size: .940rem;
     color: $color-p-1;
     line-height: 1.650;
 }

@@ -31,7 +31,7 @@
 
     .hero{
         z-index: 2;
-        margin-inline: 4vw;
+        margin-inline: 2vw;
         position: relative;
         padding-top: 7vh;
         display: flex;
@@ -50,8 +50,20 @@
 
 }
 
+@media screen and (min-width:580px){
+    .header{
+        .hero{
+            padding-top: 13vh;
+            margin-inline: 5vw;
 
-@media screen and (min-width:1025px){
+            .hero__description{
+                max-width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:925px){
     .header{
         overflow: hidden;
         background-position: right;
@@ -65,11 +77,11 @@
         }
 
         .hero{
-            padding-top: 4vh;
+            padding-top: 10vh;
             margin-inline: 2vw;
 
             .hero__description{
-                max-width: 50%;
+                max-width: 40%;
                 margin-left: 1rem;
 
                 p{
@@ -102,9 +114,9 @@
         background-size: 46%;
 
         .hero{
-            padding-top: 6rem;
-            width: 60%;
-            margin-left: 8rem;
+            padding-top: 4rem;
+            width: 90%;
+            margin-left: 7rem;
             .hero__description{
                 h1{
                     font-size: 4.8rem;

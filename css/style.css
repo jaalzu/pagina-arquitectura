@@ -72,13 +72,18 @@ span, p {
 }
 
 h1 {
-  font-size: 3.3rem;
+  font-size: clamp(3rem, 4.2vw, 4.5rem);
   font-weight: 800;
   color: rgb(242, 242, 242);
 }
 
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 2.9rem;
+  }
+}
 p {
-  font-size: 1rem;
+  font-size: 0.94rem;
   color: rgba(255, 255, 255, 0.8039215686);
   line-height: 1.65;
 }
@@ -221,7 +226,7 @@ a {
 }
 .header .hero {
   z-index: 2;
-  margin-inline: 4vw;
+  margin-inline: 2vw;
   position: relative;
   padding-top: 7vh;
   display: flex;
@@ -237,7 +242,16 @@ a {
   margin-block: 3rem;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 580px) {
+  .header .hero {
+    padding-top: 13vh;
+    margin-inline: 5vw;
+  }
+  .header .hero .hero__description {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 925px) {
   .header {
     overflow: hidden;
     background-position: right;
@@ -250,11 +264,11 @@ a {
     background-color: rgba(0, 0, 0, 0.3); /* Color semitransparente */
   }
   .header .hero {
-    padding-top: 4vh;
+    padding-top: 10vh;
     margin-inline: 2vw;
   }
   .header .hero .hero__description {
-    max-width: 50%;
+    max-width: 40%;
     margin-left: 1rem;
   }
   .header .hero .hero__description p {
@@ -277,9 +291,9 @@ a {
     background-size: 46%;
   }
   .header .hero {
-    padding-top: 6rem;
-    width: 60%;
-    margin-left: 8rem;
+    padding-top: 4rem;
+    width: 90%;
+    margin-left: 7rem;
   }
   .header .hero .hero__description h1 {
     font-size: 4.8rem;
@@ -534,14 +548,14 @@ hr {
 @media screen and (min-width: 1025px) {
   .services {
     padding-top: 5rem;
-    margin-inline: 3vw;
+    margin-inline: 2vw;
   }
   .services .services__img {
-    margin-inline: 3vw;
+    margin-inline: 2vw;
   }
   .services .services__img img {
-    width: 580px;
-    height: 540px;
+    width: 500px;
+    height: 500px;
   }
   .services .services__container {
     display: flex;
@@ -549,7 +563,7 @@ hr {
     padding-bottom: 8rem;
   }
   .services .services__container .services__description {
-    margin-right: 2rem;
+    margin-right: 0rem;
   }
   .services .services__container .services__description .services__title {
     margin-block: 2rem;
@@ -559,10 +573,10 @@ hr {
   }
   .services .services__container .services__description .services__title h3 {
     margin-top: 0.4rem;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
   .services .services__container .services__description p {
-    max-width: 80%;
+    max-width: 95%;
   }
   .services .services__container:nth-child(3), .services .services__container:nth-child(5) {
     flex-direction: row-reverse;
@@ -573,8 +587,25 @@ hr {
   .services {
     margin-inline: 14vw;
   }
-  .services .services__description p {
+  .services .services__img img {
+    width: 540px;
+    height: 540px;
+  }
+  .services .services__container .services__description p {
+    max-width: 95%;
     font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1475px) {
+  .services {
+    margin-inline: 14vw;
+  }
+  .services .services__img img {
+    width: 600px;
+    height: 540px;
+  }
+  .services .services__container .services__description p {
+    max-width: 85%;
   }
 }
 .work {
@@ -668,7 +699,7 @@ hr {
 }
 .clients {
   background-color: rgba(255, 255, 255, 0.9843137255);
-  height: 100vh;
+  min-height: 90vh;
   padding-top: 4rem;
 }
 .clients h2 {
@@ -677,8 +708,9 @@ hr {
 .clients .swiper {
   display: flex;
   align-items: center;
-  height: 400px;
+  height: 430px;
   gap: 1rem;
+  width: 100%;
 }
 .clients .client__box {
   cursor: pointer;
