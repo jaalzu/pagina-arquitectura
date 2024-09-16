@@ -1,20 +1,21 @@
+
+//  NAV RESPONSIVE 
 document.addEventListener('DOMContentLoaded', function () {
     const toggleMenu = document.getElementById('toggle-menu');
     const navList = document.getElementById('nav-list');
     const closeMenu = document.getElementById('close-menu');
   
-    // Abrir el menú cuando se hace clic en el ícono del menú
+   
     toggleMenu.addEventListener('click', function () {
-      navList.classList.add('show-menu'); // Agrega la clase 'show-menu'
-      toggleMenu.style.display = 'none'; // Oculta el ícono del menú
-      closeMenu.style.display = 'block'; // Muestra el ícono de cerrar
+      navList.classList.add('show-menu');
+      toggleMenu.style.display = 'none';  
+      closeMenu.style.display = 'block';  
     });
   
-    // Cerrar el menú cuando se hace clic en el ícono de cerrar
     closeMenu.addEventListener('click', function () {
-      navList.classList.remove('show-menu'); // Remueve la clase 'show-menu'
-      closeMenu.style.display = 'none'; // Oculta el ícono de cerrar
-      toggleMenu.style.display = 'block'; // Muestra el ícono del menú
+      navList.classList.remove('show-menu'); 
+      closeMenu.style.display = 'none';  
+      toggleMenu.style.display = 'block';
     });
   });
   
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  
+// SWIPER JS  
 
 
   const swiper = new Swiper('.swiper', {
@@ -85,26 +86,24 @@ function applyScrollRevealForDesktop() {
     revealElements('.contact__grid');
 
     ScrollReveal().reveal('.section__title', {
-      delay: 1300,                 // Espera 0.3 segundos antes de revelar
-      distance: '50px',           // El contenido aparece desde 50px abajo
-      origin: 'top',           // Aparece desde arriba
-      duration: 1600,              // La duración de la animación ScrollReveal
-      opacity: 0,                 // Cambia la opacidad para que el elemento "se desvanezca" al aparecer
-      scale: 0.85,                // Escala inicial para el elemento
-      easing: 'ease-in-out',      // Transición suave
-      reset: false,               // No repite la animación al hacer scroll
+      delay: 1300,                 
+      distance: '50px',           
+      origin: 'top',          
+      duration: 1600,             
+      opacity: 0,                
+      scale: 0.85,                
+      easing: 'ease-in-out',      
+      reset: false,               
       beforeReveal: function (el) {
-        // Agrega la clase de Animate.css cuando se revele el elemento
+        
         el.classList.add('animate__animated', 'animate__backInUp');
       }
     });
   }
 }
 
-// Aplica las animaciones ScrollReveal para pantallas grandes (más de 1025px)
 applyScrollRevealForDesktop();
 
-// Opcional: Actualiza ScrollReveal cuando cambie el tamaño de la ventana
 window.addEventListener('resize', function() {
   applyScrollRevealForDesktop();
 });
@@ -121,3 +120,23 @@ window.addEventListener('resize', function() {
 
 
 
+// Función para añadir animaciones solo en pantallas grandes (más de 1025px)
+function applyAnimationsForDesktop() {
+  if (window.matchMedia('(min-width: 1025px)').matches) {
+    document.querySelector('.hero__title').classList.add('animate__animated', 'animate__backInUp');
+    document.querySelector('.hero__p').classList.add('animate__animated', 'animate__backInUp');
+    document.querySelector('.btn-primary').classList.add('animate__animated', 'animate__fadeInLeft');
+  } else {
+    document.querySelector('.hero__title').classList.remove('animate__animated', 'animate__backInUp');
+    document.querySelector('.hero__p').classList.remove('animate__animated', 'animate__backInUp');
+    document.querySelector('.btn-primary').classList.remove('animate__animated', 'animate__fadeInLeft');
+  }
+}
+
+// Aplica las animaciones para pantallas grandes (más de 1025px)
+applyAnimationsForDesktop();
+
+// Actualiza animaciones cuando cambie el tamaño de la ventana
+window.addEventListener('resize', function() {
+  applyAnimationsForDesktop();
+});

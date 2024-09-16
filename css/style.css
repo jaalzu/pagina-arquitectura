@@ -594,7 +594,7 @@ hr {
 }
 .work .work__grid .work__box {
   margin-inline: 6vw;
-  border: 1px solid #888888;
+  border: 1px solid #666666;
   border-radius: 5px;
 }
 .work .work__grid .work__box .work__description {
@@ -613,7 +613,7 @@ hr {
   font-weight: 800;
 }
 .work .work__grid .work__box .work__description p {
-  color: #888888;
+  color: #666666;
   margin-top: 1.3rem;
   margin-bottom: 2.3rem;
   font-size: 0.9rem;
@@ -667,7 +667,7 @@ hr {
     margin-top: 1.4rem;
   }
   .work .work__grid .work__box .work__description p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 .clients {
@@ -704,7 +704,7 @@ hr {
   line-height: 1.3;
 }
 .clients .client__box .client__name span {
-  color: #888888;
+  color: #666666;
   font-size: 0.9rem;
 }
 .clients .client__box .client__comment span {
