@@ -305,7 +305,7 @@ a {
   margin-bottom: 1.3rem;
 }
 .footer .footer__grid {
-  padding-left: 1.5rem;
+  padding-left: 1.1rem;
   margin-block: 4rem;
 }
 .footer .footer__grid ul {
@@ -602,10 +602,6 @@ hr {
   margin-top: 2rem;
   margin-right: 1rem;
 }
-.work .work__grid .work__box .work__description i {
-  font-size: 2.6rem;
-  color: #F8D40B;
-}
 .work .work__grid .work__box .work__description h3 {
   margin-top: 1.8rem;
   font-size: 1.3rem;
@@ -672,8 +668,8 @@ hr {
 }
 .clients {
   background-color: rgba(255, 255, 255, 0.9843137255);
-  height: 90vh;
-  padding-top: 5rem;
+  height: 100vh;
+  padding-top: 4rem;
 }
 .clients h2 {
   margin-inline: 10vw;
@@ -723,11 +719,6 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.clients .client__box .client__stars i {
-  color: #F8D40B;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
 }
 .clients .client__box .client__stars img {
   width: 80%;

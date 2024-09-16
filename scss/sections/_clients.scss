@@ -1,8 +1,8 @@
 .clients{
     background-color: $color-white-bg;
-    height: 90vh;
-    padding-top: 5rem;
-   
+    height: 100vh;
+    padding-top: 4rem;
+    
         h2{
             margin-inline: 10vw;
         }
@@ -56,12 +56,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                i{
-                    color: $color-primary;
-                    font-size: 1.1rem;
-                    margin-bottom: 1rem;
-                }
-
+                
                 img{
                     width: 80%;
                     height: 100%;
