@@ -70,9 +70,12 @@
     }
 
     .copyright{
-        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
         font-weight: $weight-light;
         padding-top: 1rem;
+        color: $color-black;
+        padding-bottom: 1rem;
     }
 }
 

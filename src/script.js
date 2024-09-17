@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// Función para aplicar ScrollReveal solo en pantallas grandes (más de 1025px)
+
 function applyScrollRevealForDesktop() {
   if (window.matchMedia('(min-width: 1025px)').matches) {
     function revealElements(selector) {

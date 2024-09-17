@@ -1,6 +1,6 @@
 .about{
     background-color: $color-white-bg;  
-    padding-bottom: 8rem;
+    padding-bottom: 7rem;
     .about__img {
         width: 100%;
         img{
@@ -15,7 +15,7 @@
    
     
     .about__description{
-        padding-top: 3rem;
+        padding-top: 4rem;
         margin-inline: 4vw;
         
         h2{
@@ -26,9 +26,9 @@
         }
 
         p{
-            margin-top: 3rem;
+            margin-top: 2rem;
             color: $color-p-2;
-            margin-bottom: 1.7rem;
+            margin-bottom: 1.3rem;
         }
     }
 }
@@ -38,6 +38,7 @@
 @media screen and (min-width:1025px){
     .about{
         display: grid;
+        padding-bottom: 5rem;
         grid-template-columns: 1fr 1fr;
         .about__img{
             display: none;
