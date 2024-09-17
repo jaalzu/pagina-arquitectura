@@ -1,10 +1,13 @@
 {
   "name": "pagina-arquitectura",
   "version": "1.0.0",
-  "description": "",
+  "description": "Un proyecto para la construcción de hogares sustentables con diseño simple y elegante.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass scss/style.scss css/style.css",
+    "start": "live-server public",
+    "watch-css": "sass --watch scss/style.scss:css/style.css"
   },
   "keywords": [],
   "author": "",
