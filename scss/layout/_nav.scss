@@ -1,16 +1,7 @@
 .header{
     padding-top: 3rem;
-    .logo{
-        color: white;
-        font-size: 1.6rem;
-        font-weight: $weight-bold;
-        z-index: 2;
-        position: relative;
-        
-        span{
-            color: $color-primary;
-        }
-    }
+    
+
 
     .navbar{
         z-index: 100;
@@ -67,13 +58,13 @@
         background-color: $color-primary;
         border-radius: 50%;
         padding: .8rem;
-        top: 4.5%;
+        top: 4%;
         cursor: pointer;
         display: flex;
         align-items: center;
         justify-content: center;
         position: fixed;
-        right: 10%;
+        right: 9%;
         z-index: 1000;
         #close-menu{
             display: none;
@@ -108,7 +99,7 @@
                         &::after{
                             content: "";
                             position: absolute;
-                            bottom: -2px;
+                            bottom: -3px;
                             left: 0;
                             width: 0%;
                             height: 2px;

@@ -22,28 +22,10 @@ img{
     width: auto;
 }
 
-.logo{
-  width: auto;
-  height: auto;
-}
 
-/* Estilo general para el logo */
-.logo {
-  display: none; /* Oculta ambos logos por defecto */
-}
-
-/* Mostrar solo el logo para escritorio */
-@media (min-width: 768px) { /* Ajusta el valor según tus necesidades */
-  .desktop-logo {
-    display: block; /* Muestra el logo de escritorio en pantallas grandes */
-  }
-}
-
-/* Mostrar solo el logo para móvil */
-@media (max-width: 767px) { /* Ajusta el valor según tus necesidades */
-  .mobile-logo {
-    display: block; /* Muestra el logo móvil en pantallas pequeñas */
-  }
+.img-logo{
+  width: 130px;
+  z-index: 1000;
 }
 
 

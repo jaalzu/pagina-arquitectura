@@ -9,14 +9,9 @@
     font-size: 1rem;
     transition: .2 ease;
     animation-delay: 1.4s;
-
-    &:hover{
-        opacity: 0.8;
-    }
+    
+        &:hover{
+            opacity: .8 !important;
+        }
 }
 
-.btn__link{
-    color: $color-black-bg;
-    font-weight: $weight-bold;
-    text-decoration: underline;
-}
