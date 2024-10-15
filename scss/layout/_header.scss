@@ -97,11 +97,13 @@
 
 @media screen and (min-width:1275px){
     .header{
-        background-position-x: 100%;
+        background-position-x: 110%;
+        background-size: 56%;
+
         .hero{
 
             .hero__description{
-                margin-left: 2.4rem;
+                margin-left: 0rem;
             }
         }
     }
@@ -111,8 +113,7 @@
 
 @media screen and (min-width:1475px){
     .header{
-        background-size: 46%;
-
+        background-size:55%;
         .hero{
             padding-top: 4rem;
             width: 90%;
