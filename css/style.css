@@ -217,8 +217,7 @@ a {
 }
 .header .hero .hero__description h1 {
   margin-top: 2.5rem;
-  height: 100%;
-  width: 100%;
+  height: auto;
 }
 .header .hero .hero__description p {
   animation-delay: 0.6s;
