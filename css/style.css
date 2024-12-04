@@ -201,7 +201,7 @@ a {
 }
 .header .hero {
   z-index: 2;
-  margin-inline: 3.9vw;
+  margin-inline: 4.9vw;
   position: relative;
   padding-top: 7vh;
   display: flex;
@@ -214,7 +214,7 @@ a {
 }
 .header .hero .hero__description p {
   animation-delay: 0.6s;
-  margin-block: 3rem;
+  margin-block: 2rem;
 }
 
 @media screen and (min-width: 580px) {
