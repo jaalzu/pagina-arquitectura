@@ -5,6 +5,7 @@
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
+  font-display: swap;
 }
 
 body {
@@ -84,6 +85,9 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-inline: 8vw;
+}
+.header .navbar .img-logo {
+  height: auto;
 }
 .header .navbar .nav__list {
   position: fixed;
